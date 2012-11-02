@@ -39,7 +39,8 @@ depends_lib		\
 	port:libmcrypt		\
 	port:gmp		\
 	port:zlib \
-	port:libarchive
+	port:libarchive \
+	port:ossp-uuid
 
 use_parallel_build	no
 

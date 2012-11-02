@@ -29,7 +29,7 @@ upload::
 $(DISTFILE):
 	mkdir -p distfiles/$(PKG)
 	wget $(URL)/pl-$(VERSION).tar.gz -O $(DISTFILE)
-#	rsync $(SRC)/pl-$(VERSION).tar.gz $(DISTFILE)
+#	rsync -P $(SRC)/pl-$(VERSION).tar.gz $(DISTFILE)
 
 $(PORTFILE):	$(DISTFILE) Portfile.template
 	sed -e "s/@VERSION@/$(VERSION)/" \
