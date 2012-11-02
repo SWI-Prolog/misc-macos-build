@@ -31,10 +31,9 @@ checksums   \
 
 depends_build
 
-depends_lib		\
+depends_lib			\
 	port:readline		\
 	port:ncurses		\
-	port:ncursesw		\
 	port:jpeg		\
 	port:libmcrypt		\
 	port:gmp		\
@@ -43,6 +42,8 @@ depends_lib		\
 	port:ossp-uuid
 
 use_parallel_build	no
+package.flat		no
+universal_variant	no
 
 distname	pl-${version}
 
